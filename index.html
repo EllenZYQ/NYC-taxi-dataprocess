@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<style type="text/css">
+		body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
+		#l-map{height:100%;width:78%;float:left;border-right:2px solid #bcbcbc;}
+		#r-result{height:100%;width:20%;float:left;}
+	</style>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=密钥"></script>
+	<title>添加多个标注点</title>
+</head>
+<body>
+	<div id="allmap"></div>
+</body>
+</html>
+<script type="text/javascript">
+	// 百度地图API功能
+	var map = new BMap.Map("allmap");
+	var point = new BMap.Point(-73.83025363,40.7592707);
+	map.centerAndZoom(point, 15);             // 初始化地图，设置中心点坐标和地图级别
+	map.enableScrollWheelZoom(); // 允许滚轮缩放
+	// 编写自定义函数,创建标注
+	function addMarker(point){
+	  var marker = new BMap.Marker(point);
+	  map.addOverlay(marker);
+	}
+	// 随机向地图添加25个标注
+	var bounds = map.getBounds();
+	var sw = bounds.getSouthWest();
+	var ne = bounds.getNorthEast();
+	var lngSpan = Math.abs(sw.lng - ne.lng);
+	var latSpan = Math.abs(ne.lat - sw.lat);
+    var point = new BMap.Point(-73.83025363,40.7592707);
+	addMarker(point);
+	var point = new BMap.Point(-74.01387206367825,40.64523506164551);
+	addMarker(point)
+	var point = new BMap.Point(-74.02006874832452,40.64942827411726);
+	addMarker(point)
+	var point = new BMap.Point(-74.01754226684571,40.64161888122558);
+	addMarker(point)
+	var point = new BMap.Point(-73.82998645305634,40.713705971837044);
+	addMarker(point)
+	var point = new BMap.Point(-73.83178784297063,40.714985847473145);
+	addMarker(point)
+	var point = new BMap.Point(-73.92110926310221,40.763183720906575);
+	addMarker(point)
+	var point = new BMap.Point(-73.88375193277994,40.746585337320965);
+	addMarker(point)
+	var point = new BMap.Point(-73.92609798546994,40.77187578605883);
+	addMarker(point)
+	var point = new BMap.Point(-73.86232016427176,40.73014831542969);
+	addMarker(point)
+	var point = new BMap.Point(-73.91667175292969,40.74301180632218);
+	addMarker(point)
+	var point = new BMap.Point(-73.91466592641977,40.75317007211538);
+	addMarker(point)
+	var point = new BMap.Point(-73.9434076944987,40.74690039952596);
+	addMarker(point)
+	var point = new BMap.Point(-73.91571939402613,40.77251855258284);
+	addMarker(point)
+	var point = new BMap.Point(-73.93251298603259,40.75318958884791);
+	addMarker(point)
+	var point = new BMap.Point(-73.8857233259413,40.738539165920685);
+	addMarker(point)
+	var point = new BMap.Point(-73.91622309530935,40.761506726664884);
+	addMarker(point)
+	var point = new BMap.Point(-73.86419111682522,40.749790806924146);
+	addMarker(point)
+	var point = new BMap.Point(-73.92367460669541,40.753190668617805);
+	addMarker(point)
+	var point = new BMap.Point(-73.94970798492432,40.744162150791716);
+	addMarker(point)
+	var point = new BMap.Point(-73.91371689833603,40.74386230072418);
+	addMarker(point)
+	var point = new BMap.Point(-73.94236683395674,40.754127862318505);
+	addMarker(point)
+	var point = new BMap.Point(-73.90812113747668,40.77431169196741);
+	addMarker(point)
+	var point = new BMap.Point(-73.88410011497703,40.749715392654004);
+	addMarker(point)
+	var point = new BMap.Point(-73.87365619952863,40.75674145038311);
+	addMarker(point)
+	var point = new BMap.Point(-73.90948373300058,40.74493514166938);
+	addMarker(point)
+	var point = new BMap.Point(-73.94531331743512,40.751141616276335);
+	addMarker(point)
+	var point = new BMap.Point(-73.90941976572012,40.77020238901113);
+	addMarker(point)
+	var point = new BMap.Point(-73.87489476279607,40.74861659700908);
+	addMarker(point)
+	var point = new BMap.Point(-73.8785892833363,40.75627392855557);
+	addMarker(point)
+	var point = new BMap.Point(-73.91270810081845,40.766877855573384);
+	addMarker(point)
+	var point = new BMap.Point(-73.8589969816662,40.75060154142834);
+	addMarker(point)
+	var point = new BMap.Point(-73.94736890439634,40.74791788171839);
+	addMarker(point)
+	var point = new BMap.Point(-73.90712418094758,40.753396926387666);
+	addMarker(point)
+	var point = new BMap.Point(-73.91270554233604,40.75607632919097);
+	addMarker(point)
+	var point = new BMap.Point(-73.92147254943848,40.74345169067383);
+	addMarker(point)
+	var point = new BMap.Point(-73.92029762268066,40.75707149505615);
+	addMarker(point)
+	var point = new BMap.Point(-73.92544704530297,40.75514249103825);
+	addMarker(point)
+	var point = new BMap.Point(-73.86707750956218,40.749476035436);
+	addMarker(point)
+	var point = new BMap.Point(-73.9192837524414,40.74316139221192);
+	addMarker(point)
+	var point = new BMap.Point(-73.92905777379086,40.75732396778307);
+	addMarker(point)
+	var point = new BMap.Point(-73.91720970309511,40.76494761875698);
+	addMarker(point)
+	var point = new BMap.Point(-73.91420768968987,40.764291647708774);
+	addMarker(point)
+	var point = new BMap.Point(-73.95358379467113,40.74372231423318);
+	addMarker(point)
+	var point = new BMap.Point(-73.91199323866103,40.774941232469345);
+	addMarker(point)
+	var point = new BMap.Point(-73.87023941351443,40.75720783155791);
+	addMarker(point)
+	var point = new BMap.Point(-73.91710468874139,40.77064643471928);
+	addMarker(point)
+	var point = new BMap.Point(-73.8796625444966,40.74099657612462);
+	addMarker(point)
+	var point = new BMap.Point(-73.89184820124534,40.74866860313753);
+	addMarker(point)
+	var point = new BMap.Point(-73.88320434227418,40.74313007311875);
+	addMarker(point)
+	var point = new BMap.Point(-73.91903618403843,40.75919359070914);
+	addMarker(point)
+	var point = new BMap.Point(-73.92702135126642,40.762721690725776);
+	addMarker(point)
+	var point = new BMap.Point(-73.88719834221735,40.75545130835639);
+	addMarker(point)
+	var point = new BMap.Point(-73.92275939116607,40.76076084858662);
+	addMarker(point)
+	var point = new BMap.Point(-73.8934934706915,40.754687445504324);
+	addMarker(point)
+	var point = new BMap.Point(-73.87073310216267,40.751617431640625);
+	addMarker(point)
+	var point = new BMap.Point(-73.87301234195107,40.73446179153328);
+	addMarker(point)
+	var point = new BMap.Point(-73.91836062344638,40.76994612722686);
+	addMarker(point)
+	var point = new BMap.Point(-73.87173233032226,40.74895324707031);
+	addMarker(point)
+	var point = new BMap.Point(-73.91823947790897,40.765453801010594);
+	addMarker(point)
+	var point = new BMap.Point(-73.88072865804037,40.750128428141274);
+	addMarker(point)
+	var point = new BMap.Point(-73.87278152093654,40.74886108026272);
+	addMarker(point)
+	var point = new BMap.Point(-73.92524002075196,40.7439086151123);
+	addMarker(point)
+	var point = new BMap.Point(-73.93858413696289,40.74964828491211);
+	addMarker(point)
+	var point = new BMap.Point(-73.89370727539062,40.74661382039388);
+	addMarker(point)
+	var point = new BMap.Point(-73.92059659957886,40.743366718292236);
+	addMarker(point)
+	var point = new BMap.Point(-73.8862313935251,40.744498975349195);
+	addMarker(point)
+	var point = new BMap.Point(-73.95681980678013,40.74581593104771);
+	addMarker(point)
+	var point = new BMap.Point(-73.8955275591682,40.74641205282772);
+	addMarker(point)
+	var point = new BMap.Point(-73.91171025294884,40.76789399689319);
+	addMarker(point)
+	var point = new BMap.Point(-73.88094445933466,40.75606992970342);
+	addMarker(point)
+	var point = new BMap.Point(-73.91598320007324,40.75754992167155);
+	addMarker(point)
+	var point = new BMap.Point(-73.91785151163737,40.74296360015869);
+	addMarker(point)
+	var point = new BMap.Point(-73.90029418468475,40.745925426483154);
+	addMarker(point)
+	var point = new BMap.Point(-73.91611018325344,40.764436317212656);
+	addMarker(point)
+	var point = new BMap.Point(-73.90614399157073,40.77287061590897);
+	addMarker(point)
+	var point = new BMap.Point(-73.89000660289418,40.74608473344283);
+	addMarker(point)
+	var point = new BMap.Point(-73.88979669050737,40.7469972263683);
+	addMarker(point)
+	var point = new BMap.Point(-73.93160247802734,40.765284662661344);
+	addMarker(point)
+	var point = new BMap.Point(-73.91523716367524,40.76382702794568);
+	addMarker(point)
+	var point = new BMap.Point(-73.91098159398788,40.76873035919972);
+	addMarker(point)
+	var point = new BMap.Point(-73.92170005620912,40.76025727737782);
+	addMarker(point)
+	var point = new BMap.Point(-73.92003086635044,40.76628870778269);
+	addMarker(point)
+	var point = new BMap.Point(-73.88523116478554,40.74753277118389);
+	addMarker(point)
+	var point = new BMap.Point(-73.91131318290279,40.74450496457658);
+	addMarker(point)
+	var point = new BMap.Point(-73.8841327574195,40.755740561136385);
+	addMarker(point)
+	var point = new BMap.Point(-73.87727473332332,40.73730380718525);
+	addMarker(point)
+	var point = new BMap.Point(-73.94551004682269,40.74599197932652);
+	addMarker(point)
+	var point = new BMap.Point(-73.92078744211504,40.767683029174805);
+	addMarker(point)
+	var point = new BMap.Point(-73.92211075903664,40.7556145359093);
+	addMarker(point)
+	var point = new BMap.Point(-73.89873046875,40.746078784649185);
+	addMarker(point)
+	var point = new BMap.Point(-73.87044906616211,40.74910041809082);
+	addMarker(point)
+	var point = new BMap.Point(-73.90636307852608,40.74538585117885);
+	addMarker(point)
+	var point = new BMap.Point(-73.8559365012429,40.75158663662997);
+	addMarker(point)
+	var point = new BMap.Point(-73.92450471357866,40.75619029998779);
+	addMarker(point)
+	var point = new BMap.Point(-73.9024479675293,40.775804901123045);
+	addMarker(point)
+	var point = new BMap.Point(-73.92298342146964,40.74366569519043);
+	addMarker(point)
+	var point = new BMap.Point(-73.90295664469402,40.74626064300537);
+	addMarker(point)
+	var point = new BMap.Point(-73.86892212414351,40.74916370579454);
+	addMarker(point)
+	var point = new BMap.Point(-73.86582769349565,40.73671784511832);
+	addMarker(point)
+	var point = new BMap.Point(-73.95151265462239,40.74313748072064);
+	addMarker(point)
+	var point = new BMap.Point(-73.90954280543971,40.77530896985853);
+	addMarker(point)
+	var point = new BMap.Point(-73.87787811449786,40.748289395977);
+	addMarker(point)
+	var point = new BMap.Point(-73.9144377416494,40.75683492543746);
+	addMarker(point)
+	var point = new BMap.Point(-73.8966306246244,40.746272512582635);
+	addMarker(point)
+	var point = new BMap.Point(-73.88505508422851,40.74412666320801);
+	addMarker(point)
+	var point = new BMap.Point(-73.92823163200828,40.75576213761872);
+	addMarker(point)
+	var point = new BMap.Point(-73.91318756103516,40.766110229492185);
+	addMarker(point)
+	var point = new BMap.Point(-73.92428690592448,40.7438170115153);
+	addMarker(point)
+	var point = new BMap.Point(-73.90407505741825,40.75376842640065);
+	addMarker(point)
+	var point = new BMap.Point(-73.88095515114921,40.74183375494821);
+	addMarker(point)
+	var point = new BMap.Point(-73.9236929151747,40.754565486201535);
+	addMarker(point)
+	var point = new BMap.Point(-73.88528321281312,40.75557817731585);
+	addMarker(point)
+	var point = new BMap.Point(-73.91517025816674,40.760439779244216);
+	addMarker(point)
+	var point = new BMap.Point(-73.88055982087788,40.74802975905569);
+	addMarker(point)
+	var point = new BMap.Point(-73.93999184502496,40.75026717009368);
+	addMarker(point)
+	var point = new BMap.Point(-73.91708012631065,40.761311531066895);
+	addMarker(point)
+	var point = new BMap.Point(-73.9128433227539,40.774457867940264);
+	addMarker(point)
+	var point = new BMap.Point(-73.86236476898193,40.74995501836141);
+	addMarker(point)
+	var point = new BMap.Point(-73.95652232038866,40.747600765403256);
+	addMarker(point)
+	var point = new BMap.Point(-73.90441795017408,40.74534109364385);
+	addMarker(point)
+	var point = new BMap.Point(-73.91081890869141,40.775972351074216);
+	addMarker(point)
+	var point = new BMap.Point(-73.88700251145796,40.74735136465593);
+	addMarker(point)
+	var point = new BMap.Point(-73.92405861302426,40.76136311313562);
+	addMarker(point)
+	var point = new BMap.Point(-73.88264411265456,40.755888090358944);
+	addMarker(point)
+	var point = new BMap.Point(-73.8824901123047,40.74779962158203);
+	addMarker(point)
+	var point = new BMap.Point(-73.91946536204854,40.75840696741323);
+	addMarker(point)
+	var point = new BMap.Point(-73.89230169839416,40.746908225760556);
+	addMarker(point)
+	var point = new BMap.Point(-73.88868599749625,40.7471660857505);
+	addMarker(point)
+	var point = new BMap.Point(-73.86926262896993,40.73408836696459);
+	addMarker(point)
+	var point = new BMap.Point(-73.89632827758788,40.746256790161134);
+	addMarker(point)
+	var point = new BMap.Point(-73.92214745741624,40.75512908055232);
+	addMarker(point)
+	var point = new BMap.Point(-73.91495502528859,40.763950974193975);
+	addMarker(point)
+	var point = new BMap.Point(-73.87427012125652,40.73506366247418);
+	addMarker(point)
+	var point = new BMap.Point(-73.863817117982,40.73286179364738);
+	addMarker(point)
+	var point = new BMap.Point(-73.87634658813477,40.74841571498562);
+	addMarker(point)
+	var point = new BMap.Point(-73.91974390470065,40.75930844820463);
+	addMarker(point)
+	var point = new BMap.Point(-73.92090248199831,40.7566261751106);
+	addMarker(point)
+	var point = new BMap.Point(-73.87098669550221,40.733981843207296);
+	addMarker(point)
+	var point = new BMap.Point(-73.88939996975571,40.747073956389926);
+	addMarker(point)
+	var point = new BMap.Point(-73.91370550791423,40.765487098693846);
+	addMarker(point)
+	var point = new BMap.Point(-73.8858747187349,40.747454338467);
+	addMarker(point)
+	var point = new BMap.Point(-73.91192276000976,40.77526362101237);
+	addMarker(point)
+	var point = new BMap.Point(-73.86206555722364,40.7303769979904);
+	addMarker(point)
+	var point = new BMap.Point(-73.91782527825771,40.77010891254132);
+	addMarker(point)
+	var point = new BMap.Point(-73.86982895607171,40.73359959624534);
+	addMarker(point)
+	var point = new BMap.Point(-73.91899357285611,40.758998981741975);
+	addMarker(point)
+	var point = new BMap.Point(-73.86948254529167,40.74918480480419);
+	addMarker(point)
+	var point = new BMap.Point(-73.91894646652607,40.74301365443638);
+	addMarker(point)
+	var point = new BMap.Point(-73.92541926086184,40.76186152220715);
+	addMarker(point)
+	var point = new BMap.Point(-73.90339172803439,40.74562372611119);
+	addMarker(point)
+	var point = new BMap.Point(-73.92146355413621,40.76675647612541);
+	addMarker(point)
+	var point = new BMap.Point(-73.91896256156589,40.76576232910156);
+	addMarker(point)
+	var point = new BMap.Point(-73.92983483648919,40.75643868879838);
+	addMarker(point)
+	var point = new BMap.Point(-73.94221712508292,40.7541411057958);
+	addMarker(point)
+	var point = new BMap.Point(-73.88398798239999,40.74764730416092);
+	addMarker(point)
+	var point = new BMap.Point(-73.89098521081819,40.746800976857024);
+	addMarker(point)
+	var point = new BMap.Point(-73.93354248419041,40.710537701118284);
+	addMarker(point)
+	var point = new BMap.Point(-73.9289401262656,40.70827628826273);
+	addMarker(point)
+	var point = new BMap.Point(-73.93185015077944,40.697380207203054);
+	addMarker(point)
+	var point = new BMap.Point(-73.93216557047813,40.70751125483968);
+	addMarker(point)
+	var point = new BMap.Point(-73.93552445995715,40.69710274629815);
+	addMarker(point)
+	var point = new BMap.Point(-73.9230442243753,40.70672241682859);
+	addMarker(point)
+	var point = new BMap.Point(-73.95921790081522,40.72112514661706);
+	addMarker(point)
+	var point = new BMap.Point(-73.95371153860381,40.71075289177172);
+	addMarker(point)
+	var point = new BMap.Point(-73.95801206735464,40.7294346002432);
+	addMarker(point)
+	var point = new BMap.Point(-73.95235159737723,40.733731515066964);
+	addMarker(point)
+	var point = new BMap.Point(-73.95596818190354,40.72256135206956);
+	addMarker(point)
+	var point = new BMap.Point(-73.96150896626133,40.71128919047694);
+	addMarker(point)
+	var point = new BMap.Point(-73.94872243780839,40.717891090794616);
+	addMarker(point)
+	var point = new BMap.Point(-73.95142316818237,40.71237373352051);
+	addMarker(point)
+	var point = new BMap.Point(-73.95173437935965,40.72374087742397);
+	addMarker(point)
+	var point = new BMap.Point(-73.95793591123639,40.71085981889205);
+	addMarker(point)
+	var point = new BMap.Point(-73.96499196220847,40.711017945233515);
+	addMarker(point)
+	var point = new BMap.Point(-73.95807510767227,40.73299094958183);
+	addMarker(point)
+	var point = new BMap.Point(-73.9476934160505,40.71443139939081);
+	addMarker(point)
+	var point = new BMap.Point(-73.94116303016399,40.72196782868484);
+	addMarker(point)
+	var point = new BMap.Point(-73.9463974237442,40.711360931396484);
+	addMarker(point)
+	var point = new BMap.Point(-73.95246903792672,40.71769954847253);
+	addMarker(point)
+	var point = new BMap.Point(-73.95868199666342,40.71893107096354);
+	addMarker(point)
+	var point = new BMap.Point(-73.95487606164181,40.71408982710405);
+	addMarker(point)
+	var point = new BMap.Point(-73.95578804016114,40.71761589050293);
+	addMarker(point)
+	var point = new BMap.Point(-73.96433448791504,40.71271872520447);
+	addMarker(point)
+	var point = new BMap.Point(-73.94825080133253,40.72466487269248);
+	addMarker(point)
+	var point = new BMap.Point(-73.94980727794558,40.71697031065475);
+	addMarker(point)
+	var point = new BMap.Point(-73.96345943874783,40.71874173482259);
+	addMarker(point)
+	var point = new BMap.Point(-73.95530402142069,40.73647507377293);
+	addMarker(point)
+	var point = new BMap.Point(-73.96607273646764,40.71254348754883);
+	addMarker(point)
+	var point = new BMap.Point(-73.94329466643157,40.707986407809784);
+	addMarker(point)
+	var point = new BMap.Point(-73.95890245281282,40.70902102110816);
+	addMarker(point)
+	var point = new BMap.Point(-73.9518638433412,40.715796448463614);
+	addMarker(point)
+	var point = new BMap.Point(-73.9535236936627,40.72859792998343);
+	addMarker(point)
+	var point = new BMap.Point(-73.94392907814901,40.71183864405898);
+	addMarker(point)
+	var point = new BMap.Point(-73.96125545058139,40.70958656488463);
+	addMarker(point)
+	var point = new BMap.Point(-73.95043881734212,40.707054456075035);
+	addMarker(point)
+	var point = new BMap.Point(-73.94884995282706,40.71110288975603);
+	addMarker(point)
+	var point = new BMap.Point(-73.96240179879325,40.719669818878174);
+	addMarker(point)
+	var point = new BMap.Point(-73.9406898021698,40.7120161652565);
+	addMarker(point)
+	var point = new BMap.Point(-73.95621424135955,40.71922551030698);
+	addMarker(point)
+	var point = new BMap.Point(-73.9631006934426,40.717062603343614);
+	addMarker(point)
+	var point = new BMap.Point(-73.95443295760893,40.71891956597987);
+	addMarker(point)
+	var point = new BMap.Point(-73.94218106813068,40.71463027181505);
+	addMarker(point)
+	var point = new BMap.Point(-73.95492749336438,40.72056354620518);
+	addMarker(point)
+	var point = new BMap.Point(-73.95448998345269,40.73139029608832);
+	addMarker(point)
+	var point = new BMap.Point(-73.95862734575809,40.71420022213098);
+	addMarker(point)
+	var point = new BMap.Point(-73.96031845092773,40.71963989257812);
+	addMarker(point)
+	var point = new BMap.Point(-73.96658168119542,40.711029557620776);
+	addMarker(point)
+	var point = new BMap.Point(-73.96172440219932,40.7161308610943);
+	addMarker(point)
+	var point = new BMap.Point(-73.94786114162869,40.70689589888961);
+	addMarker(point)
+	var point = new BMap.Point(-73.96561921532475,40.71337366815823);
+	addMarker(point)
+	var point = new BMap.Point(-73.9569799900055,40.71253442764282);
+	addMarker(point)
+	var point = new BMap.Point(-73.95671791500516,40.72086572647095);
+	addMarker(point)
+	var point = new BMap.Point(-73.95101031741581,40.71102848568478);
+	addMarker(point)
+	var point = new BMap.Point(-73.95283532521081,40.71405428931827);
+	addMarker(point)
+	var point = new BMap.Point(-73.93983869732551,40.70776410372752);
+	addMarker(point)
+	var point = new BMap.Point(-73.96015766688755,40.71554115840367);
+	addMarker(point)
+	var point = new BMap.Point(-73.95482656305487,40.73369272405451);
+	addMarker(point)
+	var point = new BMap.Point(-73.95973625183106,40.71814675331116);
+	addMarker(point)
+	var point = new BMap.Point(-73.96107131958007,40.71894691467285);
+	addMarker(point)
+	var point = new BMap.Point(-73.95532060102983,40.72008160677823);
+	addMarker(point)
+	var point = new BMap.Point(-73.95425605773926,40.73019361495972);
+	addMarker(point)
+	var point = new BMap.Point(-73.95598867665167,40.71408450085184);
+	addMarker(point)
+	var point = new BMap.Point(-73.95880212676659,40.722172083479634);
+	addMarker(point)
+	var point = new BMap.Point(-73.9628823633352,40.71199634193715);
+	addMarker(point)
+	var point = new BMap.Point(-73.95773729767564,40.71780417419912);
+	addMarker(point)
+	var point = new BMap.Point(-73.9499532955209,40.72222786342975);
+	addMarker(point)
+	var point = new BMap.Point(-73.96240580523455,40.70998629817256);
+	addMarker(point)
+	var point = new BMap.Point(-73.96365818138287,40.71041783345104);
+	addMarker(point)
+	var point = new BMap.Point(-73.95266563661637,40.72703942944926);
+	addMarker(point)
+	var point = new BMap.Point(-73.95465514619471,40.732434806177174);
+	addMarker(point)
+	var point = new BMap.Point(-73.95174522399903,40.72549161911011);
+	addMarker(point)
+	var point = new BMap.Point(-73.95894781148658,40.71670769745449);
+	addMarker(point)
+	var point = new BMap.Point(-73.95085735597472,40.72385456251062);
+	addMarker(point)
+	var point = new BMap.Point(-73.96126446281512,40.714464010651575);
+	addMarker(point)
+	var point = new BMap.Point(-73.96547909440666,40.71064442601697);
+	addMarker(point)
+	var point = new BMap.Point(-73.94936856915874,40.71402552820021);
+	addMarker(point)
+	var point = new BMap.Point(-73.95648906541908,40.71701899818752);
+	addMarker(point)
+	var point = new BMap.Point(-73.9443565447306,40.71452988300127);
+	addMarker(point)
+	var point = new BMap.Point(-73.95782177645344,40.721980659076806);
+	addMarker(point)
+	var point = new BMap.Point(-73.95758056640625,40.72978050167821);
+	addMarker(point)
+	var point = new BMap.Point(-73.95164849165548,40.71419263850747);
+	addMarker(point)
+	var point = new BMap.Point(-73.9618877002171,40.71356790406363);
+	addMarker(point)
+	var point = new BMap.Point(-73.94210619029433,40.700804002214184);
+	addMarker(point)
+	var point = new BMap.Point(-73.91138819212554,40.69971211751302);
+	addMarker(point)
+	var point = new BMap.Point(-73.93677825927735,40.687327236599394);
+	addMarker(point)
+	var point = new BMap.Point(-73.94288864135743,40.671620559692386);
+	addMarker(point)
+	var point = new BMap.Point(-73.9337158203125,40.68908354815315);
+	addMarker(point)
+	var point = new BMap.Point(-73.9157395362854,40.685784101486206);
+	addMarker(point)
+	var point = new BMap.Point(-73.90637596617354,40.69746837210148);
+	addMarker(point)
+	var point = new BMap.Point(-73.93158939906529,40.67022939409529);
+	addMarker(point)
+	var point = new BMap.Point(-73.9582288953993,40.64554350111219);
+	addMarker(point)
+	var point = new BMap.Point(-73.95984084030678,40.65558400647394);
+	addMarker(point)
+	var point = new BMap.Point(-73.96084516476363,40.66033736660949);
+	addMarker(point)
+	var point = new BMap.Point(-73.96836632176449,40.694191782098066);
+	addMarker(point)
+	var point = new BMap.Point(-73.94941239129929,40.68766939072382);
+	addMarker(point)
+	var point = new BMap.Point(-73.99861987431844,40.67511510848999);
+	addMarker(point)
+	var point = new BMap.Point(-73.99068980314294,40.68711518268196);
+	addMarker(point)
+	var point = new BMap.Point(-73.99465713500976,40.69876937866211);
+	addMarker(point)
+	var point = new BMap.Point(-73.96813629150391,40.680691986083986);
+	addMarker(point)
+	var point = new BMap.Point(-73.98262767550311,40.68333874473089);
+	addMarker(point)
+	var point = new BMap.Point(-73.95161129878117,40.69323187607985);
+	addMarker(point)
+	var point = new BMap.Point(-73.9873173673388,40.69912735845001);
+	addMarker(point)
+	var point = new BMap.Point(-73.9581490209547,40.69321894241592);
+	addMarker(point)
+	var point = new BMap.Point(-73.93105045665394,40.681563880226825);
+	addMarker(point)
+	var point = new BMap.Point(-73.96176000741812,40.6801093174861);
+	addMarker(point)
+	var point = new BMap.Point(-73.9836996829871,40.70181008541223);
+	addMarker(point)
+	var point = new BMap.Point(-73.96612922512755,40.674530729955556);
+	addMarker(point)
+	var point = new BMap.Point(-73.9967559011359,40.6952018737793);
+	addMarker(point)
+	var point = new BMap.Point(-73.97867260557233,40.674524596243195);
+	addMarker(point)
+	var point = new BMap.Point(-73.92687557054603,40.67878532409668);
+	addMarker(point)
+	var point = new BMap.Point(-74.00188217163085,40.685079447428386);
+	addMarker(point)
+	var point = new BMap.Point(-73.98459796905517,40.67507839202881);
+	addMarker(point)
+	var point = new BMap.Point(-73.97962987990607,40.664991106305806);
+	addMarker(point)
+	var point = new BMap.Point(-73.94201134190415,40.68547029206247);
+	addMarker(point)
+	var point = new BMap.Point(-73.97482785311612,40.677295598116785);
+	addMarker(point)
+	var point = new BMap.Point(-73.99909344841453,40.68113332636216);
+	addMarker(point)
+	var point = new BMap.Point(-73.96127444407979,40.67543723934987);
+	addMarker(point)
+	var point = new BMap.Point(-73.9418102132863,40.67638857611294);
+	addMarker(point)
+	var point = new BMap.Point(-73.98726678663685,40.66041724912582);
+	addMarker(point)
+	var point = new BMap.Point(-73.95099099477132,40.6657088915507);
+	addMarker(point)
+	var point = new BMap.Point(-73.99707765125093,40.69014267694382);
+	addMarker(point)
+	var point = new BMap.Point(-73.96356597313515,40.685152347271256);
+	addMarker(point)
+	var point = new BMap.Point(-73.99042042096455,40.67063764731089);
+	addMarker(point)
+	var point = new BMap.Point(-73.98431539535522,40.6970409154892);
+	addMarker(point)
+	var point = new BMap.Point(-73.92252756754557,40.67897555033366);
+	addMarker(point)
+	var point = new BMap.Point(-73.95363640785217,40.666459918022156);
+	addMarker(point)
+	var point = new BMap.Point(-73.98334740532769,40.69158206515842);
+	addMarker(point)
+	var point = new BMap.Point(-73.95506882086033,40.669576505335364);
+	addMarker(point)
+	var point = new BMap.Point(-73.96109340501869,40.697549985802695);
+	addMarker(point)
+	var point = new BMap.Point(-73.93415956239443,40.67998422158731);
+	addMarker(point)
+	var point = new BMap.Point(-73.95248208394865,40.68012898142745);
+	addMarker(point)
+	var point = new BMap.Point(-73.94706364001257,40.67627767789162);
+	addMarker(point)
+	var point = new BMap.Point(-73.9791993171938,40.686891617313506);
+	addMarker(point)
+	var point = new BMap.Point(-73.98595638932854,40.67836846976444);
+	addMarker(point)
+	var point = new BMap.Point(-73.98371864767635,40.66811617682962);
+	addMarker(point)
+	var point = new BMap.Point(-73.9665096986641,40.6888911052815);
+	addMarker(point)
+	var point = new BMap.Point(-73.97319304637419,40.673409192990036);
+	addMarker(point)
+	var point = new BMap.Point(-73.96212340564263,40.6720313095465);
+	addMarker(point)
+	var point = new BMap.Point(-73.97165232493465,40.687477714137025);
+	addMarker(point)
+	var point = new BMap.Point(-73.95390417636969,40.67311580364521);
+	addMarker(point)
+	var point = new BMap.Point(-73.95551278250558,40.67798777988979);
+	addMarker(point)
+	var point = new BMap.Point(-73.95684586909779,40.665263861940616);
+	addMarker(point)
+	var point = new BMap.Point(-73.99723857157939,40.6611987964527);
+	addMarker(point)
+	var point = new BMap.Point(-73.95633443196614,40.68456274668376);
+	addMarker(point)
+	var point = new BMap.Point(-73.9909987449646,40.70292123158773);
+	addMarker(point)
+	var point = new BMap.Point(-73.99135780334473,40.69667829786028);
+	addMarker(point)
+	var point = new BMap.Point(-73.94440799289279,40.6922572742809);
+	addMarker(point)
+	var point = new BMap.Point(-73.99555740356445,40.679195912679035);
+	addMarker(point)
+	var point = new BMap.Point(-73.94667222764757,40.695610187671804);
+	addMarker(point)
+	var point = new BMap.Point(-73.97584802964154,40.6933759801528);
+	addMarker(point)
+	var point = new BMap.Point(-73.949823130732,40.68206239783245);
+	addMarker(point)
+	var point = new BMap.Point(-73.95859606512661,40.67903650218043);
+	addMarker(point)
+	var point = new BMap.Point(-73.99708076759622,40.67995368109809);
+	addMarker(point)
+	var point = new BMap.Point(-73.9434354228358,40.69568240258001);
+	addMarker(point)
+	var point = new BMap.Point(-73.97845458984375,40.679345321655276);
+	addMarker(point)
+	var point = new BMap.Point(-73.92918459574382,40.68335490756564);
+	addMarker(point)
+	var point = new BMap.Point(-73.95028610229492,40.683577919006346);
+	addMarker(point)
+	var point = new BMap.Point(-73.95982201894124,40.69059570630392);
+	addMarker(point)
+	var point = new BMap.Point(-73.98737392425537,40.67191591262817);
+	addMarker(point)
+	var point = new BMap.Point(-73.95993872748481,40.687908003065324);
+	addMarker(point)
+	var point = new BMap.Point(-73.9505686266669,40.67139855746565);
+	addMarker(point)
+	var point = new BMap.Point(-73.94399925970262,40.68395516180223);
+	addMarker(point)
+	var point = new BMap.Point(-73.96423205207375,40.68012632482192);
+	addMarker(point)
+	var point = new BMap.Point(-73.98945170435412,40.69118519487052);
+	addMarker(point)
+	var point = new BMap.Point(-73.99756774902343,40.683508954729355);
+	addMarker(point)
+	var point = new BMap.Point(-73.99241507925639,40.66583735768388);
+	addMarker(point)
+	var point = new BMap.Point(-73.95564602267358,40.69442342942761);
+	addMarker(point)
+	var point = new BMap.Point(-73.9464023731373,40.68028485333478);
+	addMarker(point)
+	var point = new BMap.Point(-73.99358218323951,40.66119968189913);
+	addMarker(point)
+	var point = new BMap.Point(-73.96200529057928,40.68251378485497);
+	addMarker(point)
+	var point = new BMap.Point(-73.94914158907804,40.69536781311035);
+	addMarker(point)
+	var point = new BMap.Point(-73.95838854047987,40.68151595857408);
+	addMarker(point)
+	var point = new BMap.Point(-73.99101960659027,40.66349929571152);
+	addMarker(point)
+	var point = new BMap.Point(-73.9539538913303,40.6831549750434);
+	addMarker(point)
+	var point = new BMap.Point(-73.99852823110727,40.67675564105694);
+	addMarker(point)
+	var point = new BMap.Point(-73.95538017398022,40.69089714425509);
+	addMarker(point)
+	var point = new BMap.Point(-73.95135939748664,40.689329046952096);
+	addMarker(point)
+	var point = new BMap.Point(-73.93784949358772,40.67977882834042);
+	addMarker(point)
+	var point = new BMap.Point(-73.99560308456421,40.68301924069723);
+	addMarker(point)
+	var point = new BMap.Point(-73.99452837775735,40.69525196973015);
+	addMarker(point)
+	var point = new BMap.Point(-73.94991317162147,40.67591197674091);
+	addMarker(point)
+	var point = new BMap.Point(-73.95275330543518,40.676369190216064);
+	addMarker(point)
+	var point = new BMap.Point(-73.97829474472418,40.68972685278916);
+	addMarker(point)
+	var point = new BMap.Point(-73.97865833955653,40.69342265409582);
+	addMarker(point)
+	var point = new BMap.Point(-73.95067479060246,40.685993047860954);
+	addMarker(point)
+	var point = new BMap.Point(-73.98528401538579,40.688186799636995);
+	addMarker(point)
+	var point = new BMap.Point(-73.98380841265669,40.66416449075217);
+	addMarker(point)
+	var point = new BMap.Point(-73.97849149961729,40.67046696430928);
+	addMarker(point)
+	var point = new BMap.Point(-73.97982846773587,40.66088522397555);
+	addMarker(point)
+	var point = new BMap.Point(-73.96418240195827,40.693757241232355);
+	addMarker(point)
+	var point = new BMap.Point(-73.96978832426525,40.672848156520296);
+	addMarker(point)
+	var point = new BMap.Point(-73.97019549383633,40.676408463630125);
+	addMarker(point)
+	var point = new BMap.Point(-73.96651653214997,40.69338682586071);
+	addMarker(point)
+	var point = new BMap.Point(-73.98799250676082,40.69615833575909);
+	addMarker(point)
+	var point = new BMap.Point(-73.97713328516761,40.6722587762877);
+	addMarker(point)
+	var point = new BMap.Point(-73.98349889119466,40.694804072380066);
+	addMarker(point)
+	var point = new BMap.Point(-73.96302264077323,40.67360169546945);
+	addMarker(point)
+	var point = new BMap.Point(-73.95613531972847,40.67571460499483);
+	addMarker(point)
+	var point = new BMap.Point(-73.96139287013634,40.69400121651444);
+	addMarker(point)
+	var point = new BMap.Point(-73.98104731241862,40.68538757606789);
+	addMarker(point)
+	var point = new BMap.Point(-73.95717163085938,40.69894922429865);
+	addMarker(point)
+	var point = new BMap.Point(-73.94383980246151,40.68015233208151);
+	addMarker(point)
+	var point = new BMap.Point(-73.96705211292614,40.68362260298296);
+	addMarker(point)
+	var point = new BMap.Point(-73.99269010103666,40.693871013934796);
+	addMarker(point)
+	var point = new BMap.Point(-73.95937051346053,40.6767709646652);
+	addMarker(point)
+	var point = new BMap.Point(-73.92931412916917,40.67945327758789);
+	addMarker(point)
+	var point = new BMap.Point(-73.97991180419922,40.68202357821994);
+	addMarker(point)
+	var point = new BMap.Point(-73.97488207694812,40.68059710967235);
+	addMarker(point)
+	var point = new BMap.Point(-73.98922888437907,40.66566795772977);
+	addMarker(point)
+	var point = new BMap.Point(-73.97227249145507,40.693235092163086);
+	addMarker(point)
+	var point = new BMap.Point(-73.9545942179362,40.686919403076175);
+	addMarker(point)
+	var point = new BMap.Point(-73.95704558088973,40.688114269359694);
+	addMarker(point)
+	var point = new BMap.Point(-73.96357717631776,40.67695693027826);
+	addMarker(point)
+	var point = new BMap.Point(-73.97575544699644,40.674216783963715);
+	addMarker(point)
+	var point = new BMap.Point(-73.99331325954861,40.6877897757071);
+	addMarker(point)
+	var point = new BMap.Point(-73.98757155736287,40.667632818222046);
+	addMarker(point)
+	var point = new BMap.Point(-73.9550661573223,40.689169790230544);
+	addMarker(point)
+	var point = new BMap.Point(-73.9889172734441,40.69318364117596);
+	addMarker(point)
+	var point = new BMap.Point(-73.99374406987971,40.68678500435569);
+	addMarker(point)
+	var point = new BMap.Point(-73.99420415438138,40.69029881403996);
+	addMarker(point)
+	var point = new BMap.Point(-73.98880163228736,40.67021373532853);
+	addMarker(point)
+	var point = new BMap.Point(-73.96815942834925,40.67962498135037);
+	addMarker(point)
+	var point = new BMap.Point(-73.95336764466529,40.680783514883004);
+	addMarker(point)
+	var point = new BMap.Point(-73.94956671225059,40.67831297178526);
+	addMarker(point)
+	var point = new BMap.Point(-73.9800198872884,40.6687114238739);
+	addMarker(point)
+	var point = new BMap.Point(-73.99455904156974,40.685143331463415);
+	addMarker(point)
+	var point = new BMap.Point(-73.95178266884623,40.69140901427338);
+	addMarker(point)
+	var point = new BMap.Point(-73.94077603957233,40.67994976043701);
+	addMarker(point)
+	var point = new BMap.Point(-73.95574913825189,40.68115266386446);
+	addMarker(point)
+	var point = new BMap.Point(-73.95253685339173,40.69485433777766);
+	addMarker(point)
+	var point = new BMap.Point(-73.957446174284,40.67210028656816);
+	addMarker(point)
+	var point = new BMap.Point(-73.98971569631982,40.70245391365111);
+	addMarker(point)
+	var point = new BMap.Point(-73.98447405281713,40.67136389522229);
+	addMarker(point)
+	var point = new BMap.Point(-73.98336110796247,40.672705037253245);
+	addMarker(point)
+	var point = new BMap.Point(-73.9911978222075,40.68564216977074);
+	addMarker(point)
+	var point = new BMap.Point(-73.99124708453428,40.69985628591);
+	addMarker(point)
+	var point = new BMap.Point(-73.98696113902436,40.70228931043275);
+	addMarker(point)
+	var point = new BMap.Point(-73.98621024025812,40.66927144262526);
+	addMarker(point)
+	var point = new BMap.Point(-73.96897856127315,40.69313950097862);
+	addMarker(point)
+	var point = new BMap.Point(-73.99598742033307,40.69067178023489);
+	addMarker(point)
+	var point = new BMap.Point(-73.98900723147702,40.68851094431692);
+	addMarker(point)
+	var point = new BMap.Point(-73.97294762794007,40.67774687422083);
+	addMarker(point)
+	var point = new BMap.Point(-73.96947274156796,40.68952995218257);
+	addMarker(point)
+	var point = new BMap.Point(-73.94965132960567,40.68039065820199);
+	addMarker(point)
+	var point = new BMap.Point(-73.992882492963,40.6976344389074);
+	addMarker(point)
+	var point = new BMap.Point(-73.98183003867545,40.679286445059425);
+	addMarker(point)
+	var point = new BMap.Point(-73.98087057649815,40.68906362155615);
+	addMarker(point)
+	var point = new BMap.Point(-73.97560765008507,40.68669220786425);
+	addMarker(point)
+	var point = new BMap.Point(-73.9806821966447,40.676059094467604);
+	addMarker(point)
+	var point = new BMap.Point(-73.99362321802087,40.682055396002696);
+	addMarker(point)
+	var point = new BMap.Point(-73.98152931137841,40.66697288739799);
+	addMarker(point)
+	var point = new BMap.Point(-73.97748942142164,40.68369908838647);
+	addMarker(point)
+	var point = new BMap.Point(-73.98731251534699,40.691739440653365);
+	addMarker(point)
+	var point = new BMap.Point(-73.99174944986433,40.690869649251304);
+	addMarker(point)
+	var point = new BMap.Point(-73.98316046204229,40.677311598652544);
+	addMarker(point)
+	var point = new BMap.Point(-73.99395957825676,40.7028439839681);
+	addMarker(point)
+	var point = new BMap.Point(-73.9647540784862,40.683054728050756);
+	addMarker(point)
+	var point = new BMap.Point(-73.89691696,40.73974295);
+	addMarker(point)
+	var point = new BMap.Point(-73.85389395,40.72675914);
+	addMarker(point)
+	var point = new BMap.Point(-73.89691696,40.73974295);
+	addMarker(point)
+	var point = new BMap.Point(-73.85389395,40.72675914);
+	addMarker(point)
+	var point = new BMap.Point(-74.00433848,40.65375161);
+	addMarker(point)
+	var point = new BMap.Point(-73.91230813,40.67746387);
+	addMarker(point)
+	var point = new BMap.Point(-73.80754192,40.70004705);
+	addMarker(point)
+	var point = new BMap.Point(-73.8443204,40.7212744);
+	addMarker(point)
+	var point = new BMap.Point(-73.85493963,40.74252728);
+	addMarker(point)
+	var point = new BMap.Point(-73.89072189,40.8614534);
+	addMarker(point)
+	var point = new BMap.Point(-73.92321275,40.81688327);
+	addMarker(point)
+	var point = new BMap.Point(-73.92742065,40.81106967);
+	addMarker(point)
+	var point = new BMap.Point(-73.90429212,40.8795051);
+	addMarker(point)
+	var point = new BMap.Point(-73.9175528,40.81649283);
+	addMarker(point)
+	var point = new BMap.Point(-73.86129371,40.83341242);
+	addMarker(point)
+	var point = new BMap.Point(-73.92728247,40.81894571);
+	addMarker(point)
+	var point = new BMap.Point(-73.92435056,40.82748146);
+	addMarker(point)
+	var point = new BMap.Point(-73.92410526,40.86499395);
+	addMarker(point)
+	var point = new BMap.Point(-73.94615308,40.810826);
+	addMarker(point)
+	var point = new BMap.Point(-73.84268785,40.84051144);
+	addMarker(point)
+	var point = new BMap.Point(-73.90777564,40.85319328);
+	addMarker(point)
+	var point = new BMap.Point(-73.91860315,40.80728091);
+	addMarker(point)
+	var point = new BMap.Point(-73.92805676,40.83509889);
+	addMarker(point)
+	var point = new BMap.Point(-73.85247341,40.83398448);
+	addMarker(point)
+	var point = new BMap.Point(-73.90121744,40.85573245);
+	addMarker(point)
+	var point = new BMap.Point(-73.86132514,40.83346313);
+	addMarker(point)
+	var point = new BMap.Point(-73.92611158,40.81045172);
+	addMarker(point)
+	var point = new BMap.Point(-73.91146336,40.86176735);
+	addMarker(point)
+	var point = new BMap.Point(-73.91862079,40.83355651);
+	addMarker(point)
+	var point = new BMap.Point(-73.92117999,40.84643309);
+	addMarker(point)
+	var point = new BMap.Point(-73.90437483,40.87942534);
+	addMarker(point)
+	var point = new BMap.Point(-73.91257612,40.8425018);
+	addMarker(point)
+	var point = new BMap.Point(-73.90128551,40.86236269);
+	addMarker(point)
+	var point = new BMap.Point(-73.91753939,40.81640107);
+	addMarker(point)
+	var point = new BMap.Point(-73.89101039,40.86150778);
+	addMarker(point)
+	var point = new BMap.Point(-73.87940772,40.8803827);
+	addMarker(point)
+	var point = new BMap.Point(-73.9226044,40.84149731);
+	addMarker(point)
+	var point = new BMap.Point(-73.90937086,40.87448509);
+	addMarker(point)
+	var point = new BMap.Point(-73.89072189,40.8614534);
+	addMarker(point)
+	var point = new BMap.Point(-73.92321275,40.81688327);
+	addMarker(point)
+	var point = new BMap.Point(-73.92742065,40.81106967);
+	addMarker(point)
+	var point = new BMap.Point(-73.90429212,40.8795051);
+	addMarker(point)
+	var point = new BMap.Point(-73.9175528,40.81649283);
+	addMarker(point)
+	var point = new BMap.Point(-73.86129371,40.83341242);
+	addMarker(point)
+	var point = new BMap.Point(-73.92728247,40.81894571);
+	addMarker(point)
+	var point = new BMap.Point(-73.92435056,40.82748146);
+	addMarker(point)
+	var point = new BMap.Point(-73.92410526,40.86499395);
+	addMarker(point)
+	var point = new BMap.Point(-73.94615308,40.810826);
+	addMarker(point)
+	var point = new BMap.Point(-73.89072189,40.8614534);
+	addMarker(point)
+	var point = new BMap.Point(-73.92321275,40.81688327);
+	addMarker(point)
+	var point = new BMap.Point(-73.92742065,40.81106967);
+	addMarker(point)
+	var point = new BMap.Point(-73.90429212,40.8795051);
+	addMarker(point)
+	var point = new BMap.Point(-73.9175528,40.81649283);
+	addMarker(point)
+	var point = new BMap.Point(-73.86129371,40.83341242);
+	addMarker(point)
+	var point = new BMap.Point(-73.92728247,40.81894571);
+	addMarker(point)
+	var point = new BMap.Point(-73.92435056,40.82748146);
+	addMarker(point)
+	var point = new BMap.Point(-73.92410526,40.86499395);
+	addMarker(point)
+	var point = new BMap.Point(-73.94615308,40.810826);
+	addMarker(point)
+	var point = new BMap.Point(-73.93411427,40.7979046);
+	addMarker(point)
+	var point = new BMap.Point(-73.9316068,40.85868441);
+	addMarker(point)
+	var point = new BMap.Point(-73.94339294,40.82601204);
+	addMarker(point)
+	var point = new BMap.Point(-73.93998413,40.83589452);
+	addMarker(point)
+	var point = new BMap.Point(-73.9347339,40.85214379);
+	addMarker(point)
+	var point = new BMap.Point(-73.95636106,40.81833255);
+	addMarker(point)
+	var point = new BMap.Point(-73.93888931,40.83721517);
+	addMarker(point)
+	var point = new BMap.Point(-73.96045886,40.80161413);
+	addMarker(point)
+	var point = new BMap.Point(-73.93492843,40.84747813);
+	addMarker(point)
+	var point = new BMap.Point(-73.93936397,40.81036758);
+	addMarker(point)
+	var point = new BMap.Point(-73.94173092,40.83073288);
+	addMarker(point)
+	var point = new BMap.Point(-73.95224177,40.78651911);
+	addMarker(point)
+	var point = new BMap.Point(-73.94512449,40.81851121);
+	addMarker(point)
+	var point = new BMap.Point(-73.92955249,40.8550727);
+	addMarker(point)
+	var point = new BMap.Point(-73.93890926,40.82691447);
+	addMarker(point)
+	var point = new BMap.Point(-73.9536407,40.81694312);
+	addMarker(point)
+	var point = new BMap.Point(-73.94641556,40.81164132);
+	addMarker(point)
+	var point = new BMap.Point(-73.93388044,40.80275829);
+	addMarker(point)
+	var point = new BMap.Point(-73.93647995,40.83031171);
+	addMarker(point)
+	var point = new BMap.Point(-73.94442177,40.79482931);
+	addMarker(point)
+	var point = new BMap.Point(-73.95341949,40.82234039);
+	addMarker(point)
+	var point = new BMap.Point(-73.93781738,40.81254906);
+	addMarker(point)
+	var point = new BMap.Point(-73.94971287,40.8122112);
+	addMarker(point)
+	var point = new BMap.Point(-73.9347917,40.80116366);
+	addMarker(point)
+	var point = new BMap.Point(-73.94734181,40.7965449);
+	addMarker(point)
+	var point = new BMap.Point(-73.94531876,40.8131662);
+	addMarker(point)
+	var point = new BMap.Point(-73.9471271,40.78816911);
+	addMarker(point)
+	var point = new BMap.Point(-73.94921784,40.82815851);
+	addMarker(point)
+	var point = new BMap.Point(-73.94174886,40.79563689);
+	addMarker(point)
+	var point = new BMap.Point(-73.94494171,40.78709532);
+	addMarker(point)
+	var point = new BMap.Point(-73.93360536,40.84931266);
+	addMarker(point)
+	var point = new BMap.Point(-73.94245746,40.8412656);
+	addMarker(point)
+	var point = new BMap.Point(-73.94786977,40.78458795);
+	addMarker(point)
+	var point = new BMap.Point(-73.94114113,40.83923206);
+	addMarker(point)
+	var point = new BMap.Point(-73.95806371,40.80075455);
+	addMarker(point)
+	var point = new BMap.Point(-73.9494582,40.82261628);
+	addMarker(point)
+	var point = new BMap.Point(-73.96503028,40.80644499);
+	addMarker(point)
+	var point = new BMap.Point(-73.94769392,40.79034394);
+	addMarker(point)
+	var point = new BMap.Point(-73.93857625,40.84576836);
+	addMarker(point)
+	var point = new BMap.Point(-73.94290479,40.79006592);
+	addMarker(point)
+	var point = new BMap.Point(-73.93907183,40.80219642);
+	addMarker(point)
+	var point = new BMap.Point(-73.9591786,40.80935708);
+	addMarker(point)
+	var point = new BMap.Point(-73.9578625,40.81114463);
+	addMarker(point)
+	var point = new BMap.Point(-73.93868497,40.79150161);
+	addMarker(point)
+	var point = new BMap.Point(-73.95444693,40.80050965);
+	addMarker(point)
+	var point = new BMap.Point(-73.9384707,40.82258493);
+	addMarker(point)
+	var point = new BMap.Point(-73.93800485,40.81808025);
+	addMarker(point)
+	var point = new BMap.Point(-73.94354057,40.82057508);
+	addMarker(point)
+	var point = new BMap.Point(-73.94709184,40.83100722);
+	addMarker(point)
+	var point = new BMap.Point(-73.93605221,40.84982861);
+	addMarker(point)
+	var point = new BMap.Point(-73.94962222,40.79336674);
+	addMarker(point)
+	var point = new BMap.Point(-73.94908687,40.79712214);
+	addMarker(point)
+	var point = new BMap.Point(-73.94023594,40.79368274);
+	addMarker(point)
+	var point = new BMap.Point(-73.94029672,40.82002776);
+	addMarker(point)
+	var point = new BMap.Point(-73.95054563,40.80590683);
+	addMarker(point)
+	var point = new BMap.Point(-73.94824208,40.81413894);
+	addMarker(point)
+	var point = new BMap.Point(-73.94261642,40.79435066);
+	addMarker(point)
+	var point = new BMap.Point(-73.95387505,40.79057905);
+	addMarker(point)
+	var point = new BMap.Point(-73.93245279,40.79550275);
+	addMarker(point)
+	var point = new BMap.Point(-73.93248505,40.85702614);
+	addMarker(point)
+	var point = new BMap.Point(-73.95473361,40.78932728);
+	addMarker(point)
+	var point = new BMap.Point(-73.93913134,40.84353107);
+	addMarker(point)
+	var point = new BMap.Point(-73.94778099,40.82509861);
+	addMarker(point)
+	var point = new BMap.Point(-73.9639783,40.80789448);
+	addMarker(point)
+	var point = new BMap.Point(-73.94248428,40.81189499);
+	addMarker(point)
+	var point = new BMap.Point(-73.9421655,40.80655677);
+	addMarker(point)
+	var point = new BMap.Point(-73.93793407,40.7969839);
+	addMarker(point)
+	var point = new BMap.Point(-73.94802226,40.80428674);
+	addMarker(point)
+	var point = new BMap.Point(-73.94662301,40.81648799);
+	addMarker(point)
+	var point = new BMap.Point(-73.96378896,40.80307682);
+	addMarker(point)
+	var point = new BMap.Point(-73.94037638,40.78916414);
+	addMarker(point)
+	var point = new BMap.Point(-73.96225351,40.80510185);
+	addMarker(point)
+	var point = new BMap.Point(-73.94167717,40.81817859);
+	addMarker(point)
+	var point = new BMap.Point(-73.94489016,40.79993978);
+	addMarker(point)
+	var point = new BMap.Point(-73.93936415,40.81618484);
+	addMarker(point)
+	var point = new BMap.Point(-73.94589548,40.7899035);
+	addMarker(point)
+	var point = new BMap.Point(-73.94468296,40.79153067);
+	addMarker(point)
+	var point = new BMap.Point(-73.95473053,40.82059564);
+	addMarker(point)
+	var point = new BMap.Point(-73.93801126,40.84761073);
+	addMarker(point)
+	var point = new BMap.Point(-73.93663593,40.82026706);
+	addMarker(point)
+	var point = new BMap.Point(-73.95220326,40.82401601);
+	addMarker(point)
+	var point = new BMap.Point(-73.93709447,40.80196011);
+	addMarker(point)
+	var point = new BMap.Point(-73.94336569,40.8362034);
+	addMarker(point)
+	var point = new BMap.Point(-73.94663493,40.80067268);
+	addMarker(point)
+	var point = new BMap.Point(-73.92321275,40.81688327);
+	addMarker(point)
+	var point = new BMap.Point(-73.92742065,40.81106967);
+	addMarker(point)
+	var point = new BMap.Point(-73.90429212,40.8795051);
+	addMarker(point)
+	var point = new BMap.Point(-73.9175528,40.81649283);
+	addMarker(point)
+	var point = new BMap.Point(-73.86129371,40.83341242);
+	addMarker(point)
+	var point = new BMap.Point(-73.92728247,40.81894571);
+	addMarker(point)
+	var point = new BMap.Point(-73.92435056,40.82748146);
+	addMarker(point)
+	var point = new BMap.Point(-73.92410526,40.86499395);
+	addMarker(point)
+	var point = new BMap.Point(-73.83812318,40.67548003);
+	addMarker(point)
+	var point = new BMap.Point(-73.95384352,40.58785416);
+	addMarker(point)
+	var point = new BMap.Point(-73.98377659,40.57787754);
+	addMarker(point)
+</script>
